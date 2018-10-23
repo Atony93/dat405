@@ -11,7 +11,7 @@ function setup() {
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Initialization: OK")
-  createCanvas(300,500);
+  createCanvas(500,300);
 }
 
 //Rendering function
