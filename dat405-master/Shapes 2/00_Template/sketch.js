@@ -17,10 +17,26 @@ function setup() {
 //Rendering function
 function draw() {
   //Set a background color
-  background(160, 0, 0);
+  background(160);
 
   //an ellispe 1
-	ellipse(40, 120, 90, 80);
+  fill (0, 0, 225);
+	ellipse(40, 40, 80, 80);
+  //an ellispe 2
+  fill (0, 255, 0)
+  ellipse(40, 260, 80, 80);
+  line (40, 260, 40, 40)
+  line (260, 40, 460, 260)
+  //an ellispe 3
+  fill (255, 255, 0)
+  ellipse(460, 260, 80, 80);
+  line (460, 260, 40, 40)
+  line (40, 260, 460, 260)
+  //an ellispe 4
+  fill (255, 0, 0)
+  ellipse(460, 40, 80, 80);
+  line (460, 40, 40, 40)
+  line (460, 40, 460, 260)
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Rendering...")
