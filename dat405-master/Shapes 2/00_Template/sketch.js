@@ -20,7 +20,7 @@ function draw() {
   background(160, 0, 0);
 
   //an ellispe 1
-	ellipse(40, 160, 80, 80);
+	ellipse(40, 120, 90, 80);
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Rendering...")
