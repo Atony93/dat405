@@ -1,42 +1,19 @@
-//https://github.com/stavrosdidakis/DAT-GAD-405_2017
-//https://p5js.org
 
-//DAT405 / GAD405
-//01_ProjectSetup
-//In this example we see how to create a canvas, set and display
-//the frame rate of the rendering system, and use text to
-//display the frame count and rate on screen
-
-//Initialization function
 function setup() {
-  //Set the size of rendering window - pixels
-  createCanvas(400, 400);
+// create the canvas
+	createCanvas (720, 400);
+	background(200)
 
-  //Set up the frame rate (frames per second)
-  //Default is 60 fps
-  frameRate(1);
+	// Set colours
+	fill(204, 101, 192,127);
+	stroke (127, 63, 120);
 
-  //Preferences for the text (size, and alignment)
-  textSize(20);
-  textAlign(CENTER);
-
-  fill(255, 0, 0);
-  rect(width/2, height/2, 50, 50);
-}
-
-//Rendering function
-function draw() {
-  //Erase all canvas. Set the color to dark grey
-  background(60);
-
-  //Set the color of the text
-  fill(255);
-  //Set the text message as the frame count
-  //Position text in the middle of the screen
-  text("Frame Count:  " + frameCount, width/2, height/2-20);
-  //Set the text message as the frame rate (round it to an integer)
-  //Position text in the middle of the screen
-  text("Frame Rate:  " + Math.round(frameRate()), width/2, height/2+20);
-
-  //noLoop();
+	//an ellispe 1
+	ellipse(340, 240, 80, 80);
+  //an ellispe 2
+	ellipse(340, 240, 80, 80);
+  //an ellispe 3
+  ellipse(340, 240, 80, 80);
+  //an ellispe 4
+  ellipse(340, 240, 80, 80);
 }
