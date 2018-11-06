@@ -5,7 +5,10 @@ function setup() {
 }
 
 function draw() {
+  customShape ();
   fill (random(255),random(255),random(255),random(50));
-  noStroke()
+  noStroke();
   ellipse (random(1000),random(1000),random(400));
+}
+function customShape(){
 }
