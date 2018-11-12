@@ -1,62 +1,62 @@
  function setup(){
-  createCanvas(1500,1500);
+  createCanvas(1000,1000);
   frameRate(15);
 }
 function draw(){
 
   if (keyIsDown(A)){
-    customShape1();
+    shape1();
     }
   if (keyIsDown(B)){
-    customShape2();
+    shape2();
     }
   if (keyIsDown(C)){
-    customShape3();
+    shape3();
   }
 
-function customShape1(){
-  let xCoor = (random(1000));
-  let yCoor = (random(1000));
+function shape1(){
+  let x = (random(500));
+  let y = (random(500));
   let size = 100;
 
   fill(255,255,255);
-  ellipse (xCoor, yCoor, size);
+  ellipse (x, y, size);
   fill (255,155,200);
-  ellipse (xCoor, yCoor, size - 10);
+  ellipse (x, y, size - 10);
   fill (255,255,255);
-  ellipse (xCoor, yCoor, size - 20);
+  ellipse (x, y, size - 20);
   fill()
-  ellipse (xCoor, yCoor, size - 35);
+  ellipse (x, y, size - 35);
   stroke(0,0,0);
   strokeWeight(5);
-  ellipse (xCoor, yCoor, size - 55);
+  ellipse (x, y, size - 55);
   stroke(0);
   strokeWeight(1);
   fill(0,255,255);
-  ellipse (xCoor, yCoor, size - 75);
+  ellipse (x, y, size - 75);
 
 }
 
-function customShape2(){
-  let xCoordinate = (random(1000));
-  let yCoordinate = (random(1000));
+function shape2(){
+  let x = (random(500));
+  let y = (random(500));
   let size = 60;
 
   fill(120,30,230);
   ellipse (xCoor, yCoor, 50);
   fill(75,75,200);
-  triangle(xCoor + 40, yCoor +60, xCoor, yCoor);
+  triangle(x + 40, y +60, x, y);
 }
 
-function customShape3(){
-  let xCoordinate = (random(1000));
-  let yCoordinate = (random(1000));
+function shape3(){
+  let x = (random(500));
+  let y = (random(500));
   let size = 50;
 
   fill(120,35,230);
-  rect(xCoor, yCoor, size, size);
+  rect(x, y, size, size);
   fill(255,80,90);
-  rect(xCoor+5, yCoor+5, size-10, size-10);
+  rect(x+5, y+5, size-10, size-10);
   fill(255,255,255);
-  rect(xCoor+10, yCoor+10, size-20, size-20);
+  rect(x+10, y+10, size-20, size-20);
 }
