@@ -18,10 +18,11 @@ function draw(){
 function shape1(){
   let x = random(500);
   let y = random(500);
-  let size = 100;
+  let size = 50;
 
-  /*fill(0, 255, 255);
+  fill(0, 0, 0);
   ellipse (x, y, size, size);
+  /*
   fill (255, 155, 200);
   ellipse (x, y, size - 10, size - 10);
   fill (0, 255, 255);
@@ -43,10 +44,10 @@ function shape2(){
   let y = random(500);
   let size = 60;
 
-  fill(120,30,230);
-  ellipse (x, y, 50, 50);
-  //fill(75,75,200);
-  //triangle(x + 40, y +60, x, y);
+/*  fill(120,30,230);
+  ellipse (x, y, 50, 50);*/
+  fill(75,75,200);
+  triangle(x + 40, y +60, x, y, x - 40, y+60 );
 }
 
 function shape3(){
