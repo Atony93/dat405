@@ -11,6 +11,7 @@ else if (s==2) shape2();
 else if (s==3) shape3();
 
 
+// un used
 /*  if (key == 'a'){
     shape1();
     }
@@ -36,7 +37,8 @@ function shape1(){
 
   fill(0, 0, 0, 50);
   ellipse (x, y, size, size);
-  /*
+  // inner circle's colours
+   /*
   fill (255, 155, 200);
   ellipse (x, y, size - 10, size - 10);
   fill (0, 255, 255);
@@ -63,7 +65,7 @@ function shape2(){
   fill(45, 242, 255, 50);
   triangle(x +40, y +60, x, y, x -40, y +60 );
 }
-// square
+// square's
 function shape3(){
   let x = (random(500));
   let y = (random(500));
@@ -71,7 +73,7 @@ function shape3(){
 
   fill(255, 14, 35, 50);
   rect(x, y, size, size);
-  fill(76, 255, 51,50);
+  fill(76, 255, 51, 50);
   rect(x+5, y+5, size-10, size-10);
   fill(255, 255, 255);
   rect(x+10, y+10, size-20, size-20);
