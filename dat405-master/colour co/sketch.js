@@ -19,6 +19,5 @@
 		rect (0 ,height/2 ,200 ,200);
 		fill (0, 0, 255, y2);
 		rect (width/2, height/2, 200, 200);
-		//
 
 	}
