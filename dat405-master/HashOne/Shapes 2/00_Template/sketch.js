@@ -1,4 +1,4 @@
-  var maxCount = 10000;
+  var maxCount = 100;
   var currentCount = 1;
   var x = [];
   var y = [];
@@ -6,8 +6,9 @@
 
   function setup() {
   createCanvas(500, 500);
-  strokeWeight(2);
+  strokeWeight(0.5);
   frameRate(1);
+
 
   // first circle
   x[0] = width / 2;
@@ -18,7 +19,7 @@
   function draw() {
   clear();
   if (mouseIsPressed) {
-    frameRate(20);
+    frameRate(100);
   }
 
   // creates a random set of parameters
