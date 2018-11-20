@@ -1,26 +1,28 @@
-  var maxCount = 100;
-  var currentCount = 1;
+
+
   var x = [];
   var y = [];
   var r = [];
-
+  var re, g, b;
+  var maxCount = 500;
+  var currentCount = 10;
   function setup() {
-  createCanvas(500, 500);
-  strokeWeight(0.5);
-  frameRate(1);
+    createCanvas(windowWidth, windowHeight);
+    strokeWeight(0.5);
+    frameRate(15);
 
 
-  // first circle
-  x[0] = width / 2;
-  y[0] = height / 2;
-  r[0] = 10;
+  // first ellipse location
+  x[0] = mouseX;
+  y[0] = mouseY;
+  r[0] = 5;
 }
 
   function draw() {
-  clear();
-  if (mouseIsPressed) {
-    frameRate(100);
-  }
+  //clear();
+  //if (keyIsPressed) {
+    //frameRate(200);
+  //}
 
   // creates a random set of parameters
   var newR = random(1, 7);
@@ -32,8 +34,8 @@
 
   // closest circle
   for (var i = 0; i < currentCount; i++) {
-    var newDist = dist(newX, newY, x[i], y[i]);
-    if (newDist < closestDist) {
+  var newDist = dist(newX, newY, x[i], y[i]);
+  if (newDist < closestDist) {
       closestDist = newDist;
       closestIndex = i;
     }
@@ -46,12 +48,20 @@
   r[currentCount] = newR;
   currentCount++;
 
-  // createing ellipse
+  // createing ellipse's
   for (var i = 0; i < currentCount; i++) {
-    fill(255);
+    fill(re, g, b );
     ellipse(x[i], y[i], r[i] * 2, r[i] * 2);
 
   }
 
-  if (currentCount >= maxCount) noLoop();
-}
+  //if (currentCount >= maxCount) noLoop();
+  }
+  function keyPressed() {
+    if (key=='1') clear();
+    if (key=='2') frameRate (60);
+    if (key=='3') re=255; g=0; b=0;
+    if (key=='4') re=0; g=255; b=255;
+    if (key=='5') re=150; g=50; b=255;
+
+  }
