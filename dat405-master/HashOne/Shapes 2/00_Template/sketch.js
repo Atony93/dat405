@@ -40,8 +40,9 @@
   }
   function keyPressed() { // function keys
     if (key=='1') frameRate (60); // increases speed of ellipse's
-    if (key=='2') frameRate (5); // decreases speed of ellipse's
+    if (key=='2') frameRate (1); // decreases speed of ellipse's
     if (key=='3') re=255; g=0; b=0; // changes colour - pink
     if (key=='4') re=0; g=255; b=255; // changes colour - blue
     if (key=='5') re=150; g=50; b=255; // changes colour - violet
+
   }
